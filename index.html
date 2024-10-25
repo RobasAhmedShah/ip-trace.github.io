@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your IP Address</title>
+</head>
+<body>
+    <h1>Your IP Address</h1>
+    <img id="ipImage" src="https://robasahmedshah.pythonanywhere.com/ip-image" alt="Your IP Address" />
+
+    <script>
+        // Reload the image every time the page is loaded to show the current IP
+        document.getElementById('ipImage').src = `https://robasahamedshah.pythonanywhere.com/ip-image?${new Date().getTime()}`;
+    </script>
+</body>
+</html>
